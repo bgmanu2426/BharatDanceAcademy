@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style 
+            include ../static/style.css 
+        title BDA - Home
+    body 
+        nav 
+            ul 
+                li: a(href='/') Home 
+                li: a(href='/about') About
+                li: a(href='/services') Services
+                li: a(href='/contact') Contact 
+
+        div.contactFormSection
+            h2(style="margin: 15px auto;") Contact Us
+            form(action="/", method="post")
+                input(type="email" name="email" id="email" placeholder="Enter your email address" required)
+                select(name="issue" required)
+                    option(value="" selected) --Select Your query-- 
+                    option(value="signup-issue") signup issue 
+                    option(value="services-issue") Services 
+                    option(value="Other-issue") Others 
+                textarea(name="description" id="description" cols="30" rows="8" style="resize: none;" placeholder="Enter your issue")
+                button(type="submit") Submit
+        div.footerSection
+            p Bharat dance academy | Copyright 2023 &copy | All rights reserved
+        script 
+            include ../static/script.js

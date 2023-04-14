@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style 
+            include ../static/style.css 
+        title BDA - Services
+    body 
+        nav 
+            ul 
+                li: a(href='/') Home 
+                li: a(href='/about') About
+                li: a(href='/services') Services
+                li: a(href='/contact') Contact 
+        h1.aboutHeading Our Missions
+        div.about
+            div.cards 
+                h3 This is a demo1
+            div.cards 
+                h3 This is a demo2
+            div.cards 
+                h3 This is a demo3
+            div.cards 
+                h3 This is a demo4
+            div.cards 
+                h3 This is a demo5
+        div.footerSection
+            p Bharat dance academy | Copyright 2023 &copy | All rights reserved
+        script 
+            include ../static/script.js

@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bayon', 'Times New Roman', Times, serif;
+}
+
+@media only screen and (min-width: 850px) {
+
+    /* For screens above 8500px : */
+    nav ul {
+        display: flex;
+        background-color: #ff6d6d;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 10px 10px;
+        margin: 3px 30px;
+    }
+
+    nav ul li:hover {
+        background-color: #ff3939;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .imageSection::before {
+        content: '';
+        background: no-repeat center/100% url("../static/img.jpg");
+        z-index: -1;
+        filter: blur(2px);
+        position: absolute;
+        width: 100%;
+        opacity: 0.7;
+        min-height: 300px;
+    }
+
+    .imageSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 300px;
+        color: purple;
+        font-size: 2.5rem;
+    }
+
+    .imageSection p {
+        font-size: 30px;
+        line-height: 26px;
+        opacity: initial;
+        font-weight: bold;
+    }
+
+    .imageSection p:nth-child(2) {
+        font-size: 21px;
+    }
+
+    .formSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 800px;
+        flex-direction: column;
+        background-color: bisque;
+    }
+
+    input,
+    textarea,
+    select {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 12px 15px;
+        width: 50vw;
+        border: 2px solid black;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    button {
+        display: flex;
+        margin: auto;
+        border: 1px solid black;
+        color: white;
+        font-weight: bold;
+        background-color: green;
+        padding: 8px 17px;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    button:hover {
+        background-color: rgb(0, 85, 0);
+    }
+
+    .sponserSection {
+        text-align: center;
+        height: 200px;
+    }
+
+    div#sponsers img {
+        width: 80px;
+        margin: 20px;
+    }
+
+    .sponserSection h2 {
+        margin-top: 15px;
+    }
+
+    .footerSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 50px;
+        background-color: black;
+    }
+
+    .aboutHeading {
+        text-align: center;
+        background-color: yellow;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+
+    .cards {
+        margin: 33px 80px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 70%;
+        height: 231px;
+    }
+
+    .cards h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contactFormSection {
+        display: flex;
+        align-items: center;
+        min-height: 550px;
+        flex-direction: column;
+        background-color: bisque;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    /* For screens above 8500px : */
+    nav ul {
+        display: flex;
+        background-color: #ff6d6d;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        padding: 4px 10px;
+        margin: 2px 10px;
+    }
+
+    nav ul li:hover {
+        background-color: #ff3939;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    .imageSection::before {
+        content: '';
+        background: no-repeat center/100% url("../static/img.jpg");
+        z-index: -1;
+        filter: blur(2px);
+        position: absolute;
+        width: 100%;
+        opacity: 0.7;
+        min-height: 150px;
+    }
+
+    .imageSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 150px;
+        color: purple;
+        font-size: 2.5rem;
+    }
+
+    .imageSection p {
+        font-size: 17px;
+        line-height: 15px;
+        opacity: initial;
+    }
+
+    .imageSection p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    .formSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 800px;
+        flex-direction: column;
+        background-color: bisque;
+    }
+
+    .formSection h2 {
+        font-size: 1.2rem;
+    }
+
+    input,
+    textarea,
+    select {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        padding: 12px 15px;
+        width: 50vw;
+        border: 2px solid black;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    button {
+        display: flex;
+        margin: auto;
+        border: 1px solid black;
+        color: white;
+        font-weight: bold;
+        background-color: green;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+
+    .sponserSection {
+        text-align: center;
+        height: 250px;
+    }
+
+    #sponsers {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+    }
+
+    .sponserSection h2 {
+        margin-top: 15px;
+    }
+
+    div#sponsers img {
+        width: 60px;
+        margin: 15px auto;
+    }
+
+    .footerSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 30px;
+        background-color: black;
+        font-size: 0.7rem;
+    }
+
+    .aboutHeading {
+        text-align: center;
+        background-color: yellow;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards {
+        margin: 20px 30px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 70%;
+        height: 231px;
+    }
+
+    .cards h3 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contactFormSection {
+        display: flex;
+        align-items: center;
+        min-height: 550px;
+        flex-direction: column;
+        background-color: bisque;
+    }
+}
