@@ -1,48 +1,30 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        style 
-            include ../static/style.css 
-        title BDA - Home
-    body 
-        nav 
-            ul
-                div#logo
-                    img(src="/static/logo.png", alt="logo") 
-                    | BDA
-                li: a(href='/') Home 
-                li: a(href='/mission') Our Missions
-                li: a(href='/about') About
-                li: a(href='/contact') Contact 
+extends layout.pug 
 
-        div.imageSection 
-            p Welcome to Bharat dance academy 
-            p Eat Dance Sleep Repeat
-        div.formSection 
-            h2(style="margin: 15px auto;") Fill this form to join our class
-            form(action="/", method="post")
-                input(type="text" name="name" id="name" placeholder="Enter your name") 
-                input(type="email" name="email" id="email" placeholder="Enter your email address") 
-                input(type="number" name="age" id="age" placeholder="Enter your age") 
-                select(name="gender")
-                    option(value="" selected) --Select Your Gender-- 
-                    option(value="Male") Male 
-                    option(value="Female") Female 
-                    option(value="Others") Others 
-                textarea(name="danceskills" id="danceskills" cols="30" rows="4" style="resize: none;" placeholder="Enter your skills")
-                textarea(name="address" id="address" cols="30" rows="4" style="resize: none;" placeholder="Enter your address")
-                button(type="submit") Submit
-        div.sponserSection 
-            h2 Our sponsers
-            div#sponsers 
-                img(src="../static/sponser-img/sponser-1.png", alt="hp")
-                img(src="../static/sponser-img/sponser-2.png", alt="accenture")
-                img(src="../static/sponser-img/sponser-3.png", alt="MCkinsey&company")
-                img(src="../static/sponser-img/sponser-4.png", alt="TataGroup")
-        div.footerSection
-            p Bharat dance academy | Copyright 2023 &copy | All rights reserved
-        script 
-            include ../static/script.js
+block title 
+    title BDA - Home
+
+block content
+    div.imageSection 
+        p Welcome to Bharat dance academy 
+        p Eat Dance Sleep Repeat
+    div.formSection 
+        h2(style="margin: 15px auto;") Fill this form to join our class
+        form(action="/", method="post")
+            input(type="text" name="name" id="name" placeholder="Enter your name") 
+            input(type="email" name="email" id="email" placeholder="Enter your email address") 
+            input(type="number" name="age" id="age" placeholder="Enter your age") 
+            select(name="gender")
+                option(value="" selected) --Select Your Gender-- 
+                option(value="Male") Male 
+                option(value="Female") Female 
+                option(value="Others") Others 
+            textarea(name="danceskills" id="danceskills" cols="30" rows="4" style="resize: none;" placeholder="Enter your skills")
+            textarea(name="address" id="address" cols="30" rows="4" style="resize: none;" placeholder="Enter your address")
+            button(type="submit") Submit
+    div.sponserSection 
+        h2 Our sponsers
+        div#sponsers 
+            img(src="../static/sponser-img/sponser-1.png", alt="hp")
+            img(src="../static/sponser-img/sponser-2.png", alt="accenture")
+            img(src="../static/sponser-img/sponser-3.png", alt="MCkinsey&company")
+            img(src="../static/sponser-img/sponser-4.png", alt="TataGroup")

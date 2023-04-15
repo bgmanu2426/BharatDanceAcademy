@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+@font-face {
+    font-family: 'Bayon';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Bayon'), local('Bayon-Regular'), url('../static/font/Bayon-Regular.ttf') format('truetype');
+}
 
 * {
     box-sizing: border-box;
@@ -102,14 +107,14 @@
         border: 1px solid black;
         color: white;
         font-weight: bold;
-        background-color: green;
+        background-color: #ff6d6d;
         padding: 8px 17px;
         border-radius: 5px;
         font-size: 1rem;
     }
 
     button:hover {
-        background-color: rgb(0, 85, 0);
+        background-color: #ff3939;
     }
 
     .sponserSection {
@@ -285,7 +290,7 @@
         border: 1px solid black;
         color: white;
         font-weight: bold;
-        background-color: green;
+        background-color: #ff6d6d;
         padding: 5px 15px;
         border-radius: 5px;
     }
@@ -373,5 +378,18 @@
 
     .card-content {
         margin: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    /* For screens below 400px : */
+    .card-img {
+        height: 90px;
+        padding: 0 20px;
+    }
+
+    .card-content {
+        font-size: small;
     }
 }

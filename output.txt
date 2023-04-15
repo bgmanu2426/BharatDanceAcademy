@@ -12,3 +12,10 @@ age : 52
 gender : Male
 Danceskills :  uil
 address :  yik
+
+name : manu
+email : 9986582408@gm
+age : 444
+gender : Others
+danceskills : hiu
+address : uihi
