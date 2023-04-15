@@ -44,6 +44,20 @@ app.get("/contact", (req, res) => {
     res.status(200).render('contact.pug')
 })
 
+app.post("/contact", (req, res) => {
+    res.send("Your requset has been submited successfully")
+    data = req.body;
+    let var1 = "";
+    let outputData = "";
+    for (const info in data) {
+        var1 = `${info} : ${data[info]}\n`;
+        outputData += var1;
+    }
+    fs.appendFile('outputContact.txt', `\n${outputData}`, (err) => {
+      if (err) throw err;
+    });
+})
+
 // Start the server 
 app.listen(port, () => {
     console.log(`The application is running on http://127.0.0.1:${port}`);
