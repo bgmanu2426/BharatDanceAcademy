@@ -32,8 +32,8 @@ app.post("/", (req, res) => {
     });
 })
 
-app.get("/services", (req, res) => {
-    res.status(200).render('services.pug')
+app.get("/mission", (req, res) => {
+    res.status(200).render('mission.pug')
 })
 
 app.get("/about", (req, res) => {

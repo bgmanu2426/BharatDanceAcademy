@@ -9,10 +9,13 @@ html(lang="en")
         title BDA - Home
     body 
         nav 
-            ul 
+            ul
+                div#logo
+                    img(src="/static/logo.png", alt="logo") 
+                    | BDA
                 li: a(href='/') Home 
+                li: a(href='/mission') Our Missions
                 li: a(href='/about') About
-                li: a(href='/services') Services
                 li: a(href='/contact') Contact 
 
         div.contactFormSection

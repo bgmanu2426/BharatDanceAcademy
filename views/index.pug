@@ -9,10 +9,13 @@ html(lang="en")
         title BDA - Home
     body 
         nav 
-            ul 
+            ul
+                div#logo
+                    img(src="/static/logo.png", alt="logo") 
+                    | BDA
                 li: a(href='/') Home 
+                li: a(href='/mission') Our Missions
                 li: a(href='/about') About
-                li: a(href='/services') Services
                 li: a(href='/contact') Contact 
 
         div.imageSection 
@@ -35,10 +38,10 @@ html(lang="en")
         div.sponserSection 
             h2 Our sponsers
             div#sponsers 
-                img(src="../static/sponser-1.png", alt="hp")
-                img(src="../static/sponser-2.png", alt="accenture")
-                img(src="../static/sponser-3.png", alt="MCkinsey&company")
-                img(src="../static/sponser-4.png", alt="TataGroup")
+                img(src="../static/sponser-img/sponser-1.png", alt="hp")
+                img(src="../static/sponser-img/sponser-2.png", alt="accenture")
+                img(src="../static/sponser-img/sponser-3.png", alt="MCkinsey&company")
+                img(src="../static/sponser-img/sponser-4.png", alt="TataGroup")
         div.footerSection
             p Bharat dance academy | Copyright 2023 &copy | All rights reserved
         script 

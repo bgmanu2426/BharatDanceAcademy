@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        style 
+            include ../static/style.css 
+        title BDA - Services
+    body 
+        nav 
+            ul
+                div#logo
+                    img(src="/static/logo.png", alt="logo") 
+                    | BDA
+                li: a(href='/') Home 
+                li: a(href='/mission') Our Missions
+                li: a(href='/about') About
+                li: a(href='/contact') Contact  
+                
+        h1.missionHeading Our Missions
+        div.mission
+            div.cards 
+                h3 This is demo title-1
+                div.card-box
+                    div.card-img
+                        img(src="/static/mission-img/dance-1.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, accusantium.
+            div.cards 
+                h3 This is demo title-2
+                div.card-box
+                    div.card-img
+                        img(src="/static/mission-img/dance-2.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, accusantium.
+            div.cards 
+                h3 This is demo title-3
+                div.card-box
+                    div.card-img
+                        img(src="/static/mission-img/dance-3.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, accusantium.
+            div.cards 
+                h3 This is demo title-4
+                div.card-box
+                    div.card-img
+                        img(src="/static/mission-img/dance-4.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, accusantium.
+            div.cards 
+                h3 This is demo title-5
+                div.card-box
+                    div.card-img
+                        img(src="/static/mission-img/dance-5.png")
+                    div.card-content
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, accusantium.
+        div.footerSection
+            p Bharat dance academy | Copyright 2023 &copy | All rights reserved
+        script 
+            include ../static/script.js

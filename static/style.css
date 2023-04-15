@@ -7,9 +7,20 @@
     font-family: 'Bayon', 'Times New Roman', Times, serif;
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 770px) {
 
-    /* For screens above 8500px : */
+    /* For screens above 770px : */
+    #logo {
+        display: flex;
+        align-items: center;
+        margin: 0 40px;
+    }
+
+    #logo img {
+        height: 45px;
+        margin: 0 7px;
+    }
+
     nav ul {
         display: flex;
         background-color: #ff6d6d;
@@ -79,7 +90,7 @@
         flex-direction: column;
         margin: 20px auto;
         padding: 12px 15px;
-        width: 50vw;
+        width: 60vw;
         border: 2px solid black;
         outline: none;
         border-radius: 5px;
@@ -124,12 +135,12 @@
         background-color: black;
     }
 
-    .aboutHeading {
+    .missionHeading {
         text-align: center;
         background-color: yellow;
     }
 
-    .about {
+    .mission {
         display: grid;
         grid-template-columns: 6fr 6fr;
     }
@@ -147,6 +158,25 @@
         margin-top: 10px;
     }
 
+    .card-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-img {
+        height: 160px;
+        padding: 0 14px;
+    }
+
+    .card-img img {
+        height: inherit;
+    }
+
+    .card-content {
+        margin: 0 10px;
+    }
+
     .contactFormSection {
         display: flex;
         align-items: center;
@@ -157,19 +187,29 @@
 }
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 770px) {
 
-    /* For screens above 8500px : */
+    /* For screens below 770px : */
+    #logo {
+        display: flex;
+        align-items: center;
+        font-size: small;
+        margin: 0 10px;
+    }
+
+    #logo img {
+        height: 30px;
+    }
+
     nav ul {
         display: flex;
         background-color: #ff6d6d;
-        justify-content: center;
     }
 
     nav ul li {
         list-style: none;
-        padding: 4px 10px;
-        margin: 2px 10px;
+        padding: 4px 6px;
+        margin: 2px 6px;
     }
 
     nav ul li:hover {
@@ -233,7 +273,7 @@
         flex-direction: column;
         margin: 20px auto;
         padding: 12px 15px;
-        width: 50vw;
+        width: 60vw;
         border: 2px solid black;
         outline: none;
         border-radius: 5px;
@@ -252,7 +292,7 @@
 
     .sponserSection {
         text-align: center;
-        height: 250px;
+        height: 270px;
     }
 
     #sponsers {
@@ -261,11 +301,11 @@
     }
 
     .sponserSection h2 {
-        margin-top: 15px;
+        margin-top: 7px;
     }
 
     div#sponsers img {
-        width: 60px;
+        width: 75px;
         margin: 15px auto;
     }
 
@@ -279,12 +319,24 @@
         font-size: 0.7rem;
     }
 
-    .aboutHeading {
+    .contactFormSection {
+        display: flex;
+        align-items: center;
+        min-height: 550px;
+        flex-direction: column;
+        background-color: bisque;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    /* For screens below 900px : */
+    .missionHeading {
         text-align: center;
         background-color: yellow;
     }
 
-    .about {
+    .mission {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -304,11 +356,22 @@
         margin-top: 10px;
     }
 
-    .contactFormSection {
+    .card-box {
         display: flex;
         align-items: center;
-        min-height: 550px;
-        flex-direction: column;
-        background-color: bisque;
+        justify-content: space-between;
+    }
+
+    .card-img {
+        height: 170px;
+        padding: 0 20px;
+    }
+
+    .card-img img {
+        height: inherit;
+    }
+
+    .card-content {
+        margin: 0 15px;
     }
 }
