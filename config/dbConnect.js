@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const connectToMongo = async () => {
-    await mongoose.connect('mongodb+srv://bgmanu:EztszEpZkJ2Zbrvf@bharatdanceacademy.6tkfjyk.mongodb.net/?retryWrites=true&w=majority')
+    await mongoose.connect('mongodb+srv://bgmanu:<password>@bharatdanceacademy.6tkfjyk.mongodb.net/?retryWrites=true&w=majority')
         .then(() => {
             console.log("Database connected successfully");
         }).catch((err) => {
